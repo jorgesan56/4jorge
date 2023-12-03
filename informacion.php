@@ -27,6 +27,7 @@
 
 
 
+
 </head>
 
 <body>
@@ -34,7 +35,7 @@
   <!-- primera navegacion y pestalla
   esto cubre desde el logo, USMAH, Hola Bienvenido:, boton cerrar, 
   las navegaciones  inicio, informacion y claces aprobadas-->
-  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
         aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,14 +52,11 @@
             </a>
           </li>
         </ul>
-
         <div class="d-flex">
 
           <a class="nav-link active" aria-current="page">
             <h3 style=color:white>Hola Bienvenido</h3>
           </a>
-
-
           <button type="button" class="btn btn-danger">Cerrar Sesión
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
               class="bi bi-arrow-left-square" viewBox="0 0 16 16">
@@ -70,8 +68,6 @@
       </div>
     </div>
   </nav>
-
-
 
   <!-- segunda navegacion y pestalla
   esto cubre desde las navegaciones inicio, informacion y claces aprobadas-->
@@ -86,6 +82,7 @@
             d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
           <path d="m8 3.293 4.712 4.712A4.5 4.5 0 0 0 8.758 15H3.5A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
         </svg>
+
       </h4>
     </a>
 
@@ -98,8 +95,6 @@
         </svg>
       </h4>
     </a>
-
-
 
     <a class="flex-sm-fill text-sm-center nav-link" href="clasesCursadas.php">
       <h4>CLASES CURSADAS
@@ -127,23 +122,109 @@
 
 
 
-  <!-- FONDO INICIO -->
-  <div class="card text-bg-dark ">
-    <img src="img/foto3.jpg" class="card-img" alt="fondo">
-    <div class="card-img-overlay text-inicio">
-      <!-- <h5 class="card-title">UNIVERSIDAD SAN MIGUEL ARCANGEL DE HONDURAS</h5> -->
-      <p class="card-text">
-      <h1>AQUI PODRAS VER TU INFORMACION PERSONAL</h1>
-      </p>
-      <p class="card-text">
-      <h1>
-        <h1>
-          </p>
+  <!-- CARRUSEL DE IMAGENES -->
+
+  <div id="carouselExample" class="carousel slide carousel-img">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/univer2.jpeg" class="universidad__imagen" alt="imagen univer2">
+      </div>
+      <div class="carousel-item">
+        <img src="img/univer1.jpeg" class="universidad__imagen" alt="imagen univer1">
+      </div>
+      <div class="carousel-item">
+        <img src="img/univer3.jpeg" class="universidad__imagen" alt="imagen univer3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!--Inicio de tabla con información del alumno-->
+  <h1 class="ha1">INFORMACION DEL ALUMNO</h1>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">DNI
+               
+              </th>
+              <th scope="col">NOMBRE
+                
+              </th>
+
+              <th scope="col">CARRERA
+                
+              </th>
+
+              <th scope="col">TELEFONO
+               
+              </th>
+
+              <th scope="col">CORREO
+               
+              </th>
+              <th scope="col">CAMPUS
+                
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"></th>
+              <td>sadsdsa</td>
+              <td>sadsd</td>
+              <td>asdsds</td>
+              <td>95741589</td>
+              <td>Raul25@gmail.com</td>
+              <td>Chinacla</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 
 
+  <h1 class="ha1">INFORMACION DE PAGO</h1>
+  <div class="container ">
+    <div class="row">
+      <div class="col">
 
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th scope="col">DNI</th>
+              <th scope="col">NOMBRE</th>
+              <th scope="col">APELLIDO</th>
+              <th scope="col">TELEFONO</th>
+              <th scope="col">CARRERA</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> PRUEBA </td>
+              <td> PRUEBA </td>
+              <td> PRUEBA </td>
+              <td> PRUEBA </td>
+              <td> PRUEBA </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 
   <nav class="nav  flex-column flex-sm-row navbar-dark bg-dark">
     <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="index.php">
@@ -169,8 +250,6 @@
       </h4>
     </a>
 
-
-
     <a class="flex-sm-fill text-sm-center nav-link" href="clasesCursadas.php">
       <h4>CLASES CURSADAS
         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-mortarboard"
@@ -194,7 +273,6 @@
       </h4>
     </a>
   </nav>
-
 
   <!-- Footer inicio de pie de pajina  -->
   <!-- Footer inicio de pie de pajina  -->
@@ -254,17 +332,13 @@
       </div>
       <!-- Grid column -->
     </section>
-
   </footer>
-
-
+  <!-- Grid container -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 
-
 </body>
-
 
 </html>

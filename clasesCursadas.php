@@ -2,32 +2,26 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alumnado
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">ent
-  </title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumnado</title>
+    
+    <!-- Vincula la hoja de estilos de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- Vincula la hoja de estilos personalizada -->
+    <link href="css/style.css" rel="stylesheet">
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <title>Diseno de USMAH</title>
+    <!-- Vincula la fuente Krub desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="preload" href="ccs/normalize.css" as=" style">
-  <link rel="stylesheet" href="css/normalaze.css">
-  <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="preload" href="ccs/style.css" as=" style">
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-
-
+    <!-- Vincula los estilos de Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 
 </head>
+
 
 <body>
 
@@ -51,14 +45,11 @@
             </a>
           </li>
         </ul>
-
         <div class="d-flex">
 
           <a class="nav-link active" aria-current="page">
             <h3 style=color:white>Hola Bienvenido</h3>
           </a>
-
-
           <button type="button" class="btn btn-danger">Cerrar Sesión
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
               class="bi bi-arrow-left-square" viewBox="0 0 16 16">
@@ -70,8 +61,6 @@
       </div>
     </div>
   </nav>
-
-
 
   <!-- segunda navegacion y pestalla
   esto cubre desde las navegaciones inicio, informacion y claces aprobadas-->
@@ -86,6 +75,7 @@
             d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
           <path d="m8 3.293 4.712 4.712A4.5 4.5 0 0 0 8.758 15H3.5A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
         </svg>
+
       </h4>
     </a>
 
@@ -98,8 +88,6 @@
         </svg>
       </h4>
     </a>
-
-
 
     <a class="flex-sm-fill text-sm-center nav-link" href="clasesCursadas.php">
       <h4>CLASES CURSADAS
@@ -125,20 +113,65 @@
     </a>
   </nav>
 
+  <!-- INICIA TABLA CLASES CURSADAS -->
+  <h1 class="ha1">CLASES CURSADAS</h1>
 
 
-  <!-- FONDO INICIO -->
-  <div class="card text-bg-dark ">
-    <img src="img/foto3.jpg" class="card-img" alt="fondo">
-    <div class="card-img-overlay text-inicio">
-      <!-- <h5 class="card-title">UNIVERSIDAD SAN MIGUEL ARCANGEL DE HONDURAS</h5> -->
-      <p class="card-text">
-      <h1>AQUI PODRAS VER TU INFORMACION PERSONAL</h1>
-      </p>
-      <p class="card-text">
-      <h1>
-        <h1>
-          </p>
+  <div class="container ">
+    <div class="row">
+      <div class="col">
+
+        <table class="table table-striped table-hover table-sm">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">ASIGNATURA</th>
+              <th scope="col">PERIODO</th>
+              <th scope="col">AÑO</th>
+              <th scope="col">PROMEDIO</th>
+              <th scope="col">OBSERVACION</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Programacion Web 1</td>
+              <td>IV</td>
+              <td>2023</td>
+              <td>80</td>
+              <td>Aprobado</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Ingles 1</td>
+              <td>IV</td>
+              <td>2023</td>
+              <td>90</td>
+              <td>Aprobado</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Matemáticas</td>
+              <td>II</td>
+              <td>2023</td>
+              <td>86</td>
+              <td>Aprobado</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Ingles 1</td>
+              <td>IV</td>
+              <td>2023</td>
+              <td>90</td>
+              <td>Aprobado</td>
+            </tr>
+
+
+          </tbody>
+        </table>
+
+
+      </div>
     </div>
   </div>
 
@@ -169,8 +202,6 @@
       </h4>
     </a>
 
-
-
     <a class="flex-sm-fill text-sm-center nav-link" href="clasesCursadas.php">
       <h4>CLASES CURSADAS
         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-mortarboard"
@@ -194,7 +225,6 @@
       </h4>
     </a>
   </nav>
-
 
   <!-- Footer inicio de pie de pajina  -->
   <!-- Footer inicio de pie de pajina  -->
@@ -254,17 +284,15 @@
       </div>
       <!-- Grid column -->
     </section>
-
   </footer>
 
 
+  <!-- Grid container -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 
-
 </body>
-
 
 </html>
